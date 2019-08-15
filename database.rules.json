@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "web": {
+      ".read": true
+    },
+    "$dir": {
+      ".read": "root.child('users').child(auth.uid).child('level').val() >= 2",
+      ".write": "root.child('users').child(auth.uid).child('level').val() >= 4"
+    },
+    "users": {
+      ".read": "root.child('users').child(auth.uid).child('level').val() >= 4",
+      ".write": "root.child('users').child(auth.uid).child('level').val() >= 4"
+    },
+    "matchs": {
+      ".read": "root.child('users').child(auth.uid).child('level').val() >= 2",
+      ".write": "root.child('users').child(auth.uid).child('level').val() >= 3"
+    }
+  }
+}
