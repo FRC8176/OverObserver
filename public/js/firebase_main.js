@@ -2,12 +2,13 @@
 console.log("Initing firebase")
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyCaCf9xHQBtK31cmLTJ_LW3pdIrPSNHUls",
-  authDomain: "overobserver-1ed5b.firebaseapp.com",
-  databaseURL: "https://overobserver-1ed5b.firebaseio.com",
-  projectId: "overobserver-1ed5b",
-  storageBucket: "overobserver-1ed5b.appspot.com",
-  messagingSenderId: "309928594845"
+  apiKey: "AIzaSyAmADe3d8-i7NOysyOkgD7RnICFS0Mrrns",
+  authDomain: "gc-builder-scout.firebaseapp.com",
+  databaseURL: "https://gc-builder-scout.firebaseio.com",
+  projectId: "gc-builder-scout",
+  storageBucket: "",
+  messagingSenderId: "576481974073",
+  appId: "1:576481974073:web:19ddb6ca5f22e9e7"
 };
 firebase.initializeApp(config);
 var database = firebase.database();
