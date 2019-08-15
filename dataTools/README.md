@@ -24,11 +24,11 @@ You have to prepare a file with the matches in it.
 
 One row is a single match. Each role has 7 numbers.
 
-Numbers in a row follow this rules:
+Numbers in a row are seperated by a space, and follow this rules:
 
 * First one is the match number
-* 2~4 is team 1~3 for **red** alliance
-* 5~7 is team 1~3 for **blue** alliance
+* 2-4 is team 1-3 for **red** alliance
+* 5-7 is team 1-3 for **blue** alliance
 
 ##### Example txt file
 
