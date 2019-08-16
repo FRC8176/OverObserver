@@ -19,7 +19,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" id="loginSmtBtn" class="btn btn-primary">Login</button>
-                <button type="button" id="googleLoginBtn" class="btn btn-dark">Login with Google</button>
+                <!-- <button type="button" id="googleLoginBtn" class="btn btn-dark">Login with Google</button> -->
             </div>
         </div>
     </div>
@@ -30,9 +30,9 @@
         signin($("#account").val(), $("#pwd").val());
     });
 
-    $("#googleLoginBtn").click(function () {
-        signinGoogle();
-    });
+    // $("#googleLoginBtn").click(function () {
+    //     signinGoogle();
+    // });
 
     $("#loginPanel").modal({
         keyboard: false,
