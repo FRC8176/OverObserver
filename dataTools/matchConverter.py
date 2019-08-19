@@ -4,6 +4,8 @@ import time
 
 def encode_matches_data(comp_level, event_key, match_datas):
     matches = {}
+    count = 0
+    baset = int(time.time())
 
     for match_data in match_datas:
         match_number = match_data[0]
@@ -24,7 +26,7 @@ def encode_matches_data(comp_level, event_key, match_datas):
             alliances['blue']['team_keys'].append('frc{}'.format(team))
 
         match = {
-            'time': int(time.time()),
+            'time': baset + count,
             'comp_level': comp_level,
             'event_key': event_key,
             'key': key,
@@ -33,6 +35,7 @@ def encode_matches_data(comp_level, event_key, match_datas):
         }
 
         matches[key] = match
+        count += 1
 
     return matches
 
